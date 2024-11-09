@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box; /* the box sizes will be calculate according to margin and padding */
+}
+
+body {
+  background-color: beige;
+  font-family: sans-serif;
+  margin: 0; /* margin value of the body element is 8px by default */
+}
+
+.header {
+  text-align: center;
+  background-color: black;
+  color: antiquewhite;
+  text-transform: uppercase;
+  border-bottom: 4px solid orange;
+  padding: 32px;
+}
+
+.gallery {
+  display: flex; /* making the container responive for the screen size */
+  flex-direction: row; /* the main axis of the container */
+  justify-content: center; /* the way the elements will be displayed along the main axis */
+  flex-wrap: wrap; /* enable the content start a new line instead of shrinkin in the same line */
+  align-items: center;
+  max-width: 1400px;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover; /* the way the image will fit to the contaier*/
+  border-radius: 10px;
+}
